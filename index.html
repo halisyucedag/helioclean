@@ -1,12 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Benim Web Sitem</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GloBetrieb</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f7f7f7;color:#222;line-height:1.6}
+    header{background:#111;color:#fff;padding:30px;text-align:center}
+    nav{background:#222;padding:12px;text-align:center}
+    nav a{color:#fff;margin:0 12px;text-decoration:none;font-weight:bold}
+    .container{max-width:1000px;margin:auto;padding:20px}
+    .logo{max-width:220px;margin:auto;display:block}
+    .hero{background:#fff;padding:40px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.08);margin-top:20px;text-align:center}
+    h1{margin-top:10px;font-size:28px;color:#4b0082}
+    .image-placeholder{background:#ddd;height:280px;border-radius:12px;margin:30px 0;display:flex;align-items:center;justify-content:center;color:#555;font-size:18px}
+    footer{background:#111;color:#fff;text-align:center;padding:30px;margin-top:40px;font-size:14px}
+    .menu-group{display:inline-block;position:relative}
+    .submenu{display:none;position:absolute;left:0;background:#333;padding:10px;border-radius:8px}
+    .submenu a{display:block;margin:6px 0}
+    .menu-group:hover .submenu{display:block}
+  </style>
 </head>
-
 <body>
-    <h1>Site çalışıyor 🚀</h1>
-    <p>MacBook'tan yayınlandı.</p>
-</body>
 
+<header>
+  <img src="images/logo.png" alt="Logo" class="logo" />
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <div class="menu-group">
+    <a href="#">Products ▾</a>
+    <div class="submenu">
+      <a href="helio.html">Helio Tablex 12 in 1</a>
+      <a href="delete.html">DELETE Allzweckreiniger</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="hero">
+    <h1>Welcome to GloBetrieb</h1>
+    <p>
+      GloBetrieb bütün branşlarda Avrupa'nın en yüksek kalitesini Avrupa'nın en düşük fiyatlarıyla hizmetinize sunar.
+      <br/><br/>
+      Bizimle iletişime geçin, alırken kazanın.
+    </p>
+  </div>
+
+  <!-- Image placeholders -->
+  <div class="image-placeholder">Homepage Image 1</div>
+  <div class="image-placeholder">Homepage Image 2</div>
+  <div class="image-placeholder">Homepage Image 3</div>
+  <div class="image-placeholder">Homepage Image 4</div>
+</div>
+
+<footer>
+  <p>© 2026 Halis Yücedag Globetrieb | Körnerstr. 1 48431 Rheine | +4917681363540 | +905423832215</p>
+</footer>
+
+</body>
 </html>
