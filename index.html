@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GloBetrieb</title>
+  <title>Helio Tablex Landing Page</title>
   <style>
     body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f7f7f7;color:#222;line-height:1.6}
     header{background:#111;color:#fff;padding:30px;text-align:center}
@@ -13,67 +13,76 @@
     .logo{max-width:220px;margin:auto;display:block}
     .hero{background:#fff;padding:40px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.08);margin-top:20px;text-align:center}
     h1{margin-top:10px;font-size:28px;color:#4b0082}
+    .badge{background:#fff0f5;padding:10px;border-radius:8px;margin:10px 5px;display:inline-block;font-weight:bold;color:#ff8c00}
     .image-placeholder{background:#ddd;height:280px;border-radius:12px;margin:30px 0;display:flex;align-items:center;justify-content:center;color:#555;font-size:18px}
+    .lang-switch{position:fixed;top:10px;right:10px}
+    button{margin:2px;padding:8px 12px;border:none;border-radius:6px;cursor:pointer}
+    .whatsapp-btn{display:block;width:250px;margin:30px auto;padding:15px;text-align:center;background:#25D366;color:#fff;font-weight:bold;border-radius:50px;text-decoration:none;font-size:18px;box-shadow:0 4px 10px rgba(0,0,0,.2)}
     footer{background:#111;color:#fff;text-align:center;padding:30px;margin-top:40px;font-size:14px}
-    .menu-group{display:inline-block;position:relative}
-    .submenu{display:none;position:absolute;left:0;background:#333;padding:10px;border-radius:8px}
-    .submenu a{display:block;margin:6px 0}
-    .menu-group:hover .submenu{display:block}
+    ul li{margin-bottom:8px}
   </style>
 </head>
 <body>
+
+<div class="lang-switch">
+  <button onclick="setLang('en')">EN</button>
+  <button onclick="setLang('tr')">TR</button>
+  <button onclick="setLang('de')">DE</button>
+</div>
 
 <header>
   <img src="images/logo.png" alt="Logo" class="logo" />
 </header>
 
 <nav>
-  <a href="index.html">Home</a>
-  <div class="menu-group">
-    <a href="#">Products ▾</a>
-    <div class="submenu">
-      <a href="helio.html">Helio Tablex 12 in 1</a>
-      <a href="delete.html">DELETE Allzweckreiniger</a>
-    </div>
-  </div>
+  <a href="index.html" data-en="Home" data-tr="Anasayfa" data-de="Startseite"></a>
+  <a href="helio.html" data-en="Helio Tablex" data-tr="Helio Tablex" data-de="Helio Tablex"></a>
+  <a href="delete.html" data-en="DELETE Cleaner" data-tr="DELETE Temizleyici" data-de="DELETE Reiniger"></a>
 </nav>
 
 <div class="container">
-  <div class="hero">
-    <h1>Welcome to GloBetrieb</h1>
-    <p>
-      GloBetrieb bütün branşlarda Avrupa'nın en yüksek kalitesini Avrupa'nın en düşük fiyatlarıyla hizmetinize sunar.
-      <br/><br/>
-      Bizimle iletişime geçin, alırken kazanın.
-    </p>
-  </div>
+  <p data-en="Select a product from the menu to view details." data-tr="Detayları görmek için menüden bir ürün seçin." data-de="Wählen Sie ein Produkt aus dem Menü, um Details zu sehen."></p>
+  <p data-en="GloBetrieb offers Europe's highest quality in all sectors at the lowest European prices. Contact us and gain while purchasing." data-tr="GloBetrieb bütün branşlarda Avrupanın en yüksek kalitesini Avrupanın en düşük fiyatlarıyla hizmetinize sunar. Bizimle iletişime geçin, alırken kazanın." data-de="GloBetrieb bietet in allen Branchen Europas höchste Qualität zu den niedrigsten europäischen Preisen. Kontaktieren Sie uns und profitieren Sie beim Einkauf."></p>
 
   <!-- Image placeholders -->
-  <div class="image-placeholder">Homepage Image 1</div>
-  <div class="image-placeholder">Homepage Image 2</div>
-  <div class="image-placeholder">Homepage Image 3</div>
-  <div class="image-placeholder">Homepage Image 4</div>
+  <div class="image-placeholder">Image 1</div>
+  <div class="image-placeholder">Image 2</div>
+  <div class="image-placeholder">Image 3</div>
+  <div class="image-placeholder">Image 4</div>
+
+  <!-- Corporate Trust Section -->
+  <h2 style="text-align:center;margin-top:70px;">Why Companies Choose GloBetrieb</h2>
+  <div style="display:flex;flex-wrap:wrap;gap:30px;justify-content:center;margin-top:30px;">
+    <div style="width:260px;background:white;padding:20px;border-radius:12px;box-shadow:0 3px 12px rgba(0,0,0,.1)">
+      <h3>🇩🇪 European Quality</h3>
+      <p>All products meet European production and quality standards.</p>
+    </div>
+    <div style="width:260px;background:white;padding:20px;border-radius:12px;box-shadow:0 3px 12px rgba(0,0,0,.1)">
+      <h3>🏭 B2B Focus</h3>
+      <p>Designed for distributors, hotels, factories and retailers.</p>
+    </div>
+    <div style="width:260px;background:white;padding:20px;border-radius:12px;box-shadow:0 3px 12px rgba(0,0,0,.1)">
+      <h3>💰 Competitive Pricing</h3>
+      <p>Direct supply with optimized European pricing.</p>
+    </div>
+  </div>
 </div>
 
 <footer>
-  <p>© 2026 Halis Yücedag Globetrieb | Körnerstr. 1 48431 Rheine | +4917681363540 | +905423832215</p>
+  <p>© 2026 Helio Yücedag Globetrieb | Körnerstr. 1 48431 Rheine | +4917681363540 | +905423832215</p>
 </footer>
+
 <a href="https://wa.me/4917681363540?text=Hello%20I%20want%20to%20receive%20wholesale%20information."
-style="
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25D366;
-color:white;
-padding:16px 22px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 4px 12px rgba(0,0,0,.3);
-z-index:999;
-">
-Request Wholesale Offer
-</a>
+style="position:fixed;bottom:25px;right:25px;background:#25D366;color:white;padding:16px 22px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:999;">Request Wholesale Offer</a>
+
+<script>
+  function setLang(lang){
+    document.querySelectorAll('[data-'+lang+']').forEach(el=>{
+      el.innerHTML = el.getAttribute('data-'+lang);
+    });
+  }
+  setLang('en');
+</script>
 
 </body>
 </html>
