@@ -1,101 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Helio Tablex Landing Page</title>
-  <style>
-    body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f7f7f7;color:#222;line-height:1.6}
-    header{background:#000;color:#fff;padding:30px;text-align:center}
-    nav{background:#222;padding:12px;text-align:center}
-    nav a{color:#fff;margin:0 12px;text-decoration:none;font-weight:bold}
-    .container{max-width:1000px;margin:auto;padding:20px}
-    .logo{max-width:300px;margin:auto;display:block}
-    .hero{background:#fff;padding:40px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.08);margin-top:20px;text-align:center}
-    h1{margin-top:10px;font-size:28px;color:#4b0082}
-    .badge{background:#fff0f5;padding:10px;border-radius:8px;margin:10px 5px;display:inline-block;font-weight:bold;color:#ff8c00}
-    .image-placeholder{background:#ddd;height:280px;border-radius:12px;margin:30px 0;display:flex;align-items:center;justify-content:center;color:#555;font-size:18px}
-    .lang-switch{position:fixed;top:10px;right:10px}
-    button{margin:2px;padding:8px 12px;border:none;border-radius:6px;cursor:pointer}
-    .whatsapp-btn{display:block;width:250px;margin:30px auto;padding:15px;text-align:center;background:#25D366;color:#fff;font-weight:bold;border-radius:50px;text-decoration:none;font-size:18px;box-shadow:0 4px 10px rgba(0,0,0,.2)}
-    footer{background:#111;color:#fff;text-align:center;padding:30px;margin-top:40px;font-size:14px}
-    ul li{margin-bottom:8px}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GloBetrieb</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+color:#222;
+background:#fff;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:#000;
+color:#fff;
+}
+
+nav a{
+margin:0 15px;
+color:#fff;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* HERO */
+.hero{
+height:80vh;
+background:url('images/main1.jpg') center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding-left:80px;
+color:white;
+}
+
+.hero h1{
+font-size:48px;
+margin:0;
+}
+
+.hero p{
+font-size:20px;
+margin-top:20px;
+max-width:500px;
+}
+
+.btn{
+margin-top:25px;
+padding:15px 30px;
+background:#6a0dad;
+color:white;
+border:none;
+border-radius:40px;
+font-weight:bold;
+text-decoration:none;
+display:inline-block;
+}
+
+/* SECTION */
+.section{
+padding:80px 40px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.card{
+width:280px;
+background:white;
+border-radius:12px;
+box-shadow:0 4px 15px rgba(0,0,0,.1);
+overflow:hidden;
+}
+
+.card img{
+width:100%;
+}
+
+.card h3{
+margin:15px;
+}
+
+.card p{
+margin:0 15px 20px;
+}
+
+/* DARK SECTION */
+.dark{
+background:#111;
+color:white;
+}
+
+/* FOOTER */
+footer{
+background:#000;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:16px 22px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 4px 12px rgba(0,0,0,.3);
+}
+</style>
 </head>
+
 <body>
 
-<div class="lang-switch">
-  <button onclick="setLang('en')">EN</button>
-  <button onclick="setLang('tr')">TR</button>
-  <button onclick="setLang('de')">DE</button>
-</div>
-
 <header>
-  <img src="images/logo.png" alt="Logo" class="logo" />
+<div>LOGO</div>
+<nav>
+<a href="#">buraya birsey yaz</a>
+<a href="#">buraya birsey yaz</a>
+<a href="#">buraya birsey yaz</a>
+</nav>
 </header>
 
-<nav>
-  <a href="index.html" data-en="Home" data-tr="Anasayfa" data-de="Startseite"></a>
-  <a href="helio.html" data-en="Helio Tablex" data-tr="Helio Tablex" data-de="Helio Tablex"></a>
-  <a href="delete.html" data-en="DELETE Cleaner" data-tr="DELETE Temizleyici" data-de="DELETE Reiniger"></a>
-</nav>
+<div class="hero">
+<h1>buraya birsey yaz</h1>
+<p>buraya birsey yaz</p>
+<a class="btn" href="#">buraya birsey yaz</a>
+</div>
 
-<div class="container">
-  <p data-en="Select a product from the menu to view details." data-tr="Detayları görmek için menüden bir ürün seçin." data-de="Wählen Sie ein Produkt aus dem Menü, um Details zu sehen."></p>
-  <p data-en="Ugur Uyhan GmbH offers Europe's highest quality in all sectors at the lowest European prices. Contact us and gain while purchasing." data-tr="Ugur Uyhan GmbH bütün branşlarda Avrupanın en yüksek kalitesini Avrupanın en düşük fiyatlarıyla hizmetinize sunar. Bizimle iletişime geçin, alırken kazanın." data-de="Ugur Uyhan GmbH bietet in allen Branchen Europas höchste Qualität zu den niedrigsten europäischen Preisen. Kontaktieren Sie uns und profitieren Sie beim Einkauf."></p>
+<div class="section">
+<h2>buraya birsey yaz</h2>
 
-  <!-- Image placeholders -->
- <img src="images/main1.jpg" alt="Main Image 1" style="width:40%;border-radius:12px;margin:30px 0;">
-<img src="images/main2.jpg" alt="Main Image 2" style="width:40%;border-radius:12px;margin:30px 0;">
+<div class="cards">
 
-<div class="container">
-  <p data-en="Rinse aid" data-tr="Parlatıcı" data-de="Klar Spüler"></p>
-  <p data-en="With water-soluble film" data-tr="Suda çözünen folyo ambalaj" data-de="Mit wasserlöslicher Folie"></p>
-  <p data-en="Easy to use" data-tr="Kolay Kullanım" data-de="Einfache Anwendung"></p>
- <p data-en="Tablex Crystal Clean Dishwasher Tablets ensure optimal cleaning results, even with stubborn stains, while being gentle on dishes and decorations. Thanks to their water soluble film, they are also easy and convenient to use for perfect cleanliness and brilliant shine." data-tr="Helio Tablex Bulaşık Makinesi Tabletleri, inatçı lekelerde bile optimum temizlik sonuçları sağlarken, bulaşıklara ve süs eşyalarına naziktir. Suda çözünen filmleri sayesinde, mükemmel temizlik ve parlaklık için kullanımı kolay ve pratiktir." data-de="Die Geschirr-Reiniger-Tabs Tablex von Helio sorgen selbst bei hartnäckigen Verschmutzungen für ein optimales Reinigungsergebnis und sind dabei schonend zu Geschirr und Dekor. Dank ihrer wasserlöslichen Folie sind sie zudem einfach und praktisch in der Anwendung – für perfekte Sauberkeit und brillanten Glanz. "></p>
+<div class="card">
+<img src="images/main1.jpg">
+<h3>buraya birsey yaz</h3>
+<p>buraya birsey yaz</p>
+</div>
 
+<div class="card">
+<img src="images/main1.jpg">
+<h3>buraya birsey yaz</h3>
+<p>buraya birsey yaz</p>
+</div>
 
-<img src="images/main3.jpg" alt="Main Image 3" style="width:40%;border-radius:12px;margin:30px 0;">
-<img src="images/main4.jpg" alt="Main Image 4" style="width:40%;border-radius:12px;margin:30px 0;">
+<div class="card">
+<img src="images/main1.jpg">
+<h3>buraya birsey yaz</h3>
+<p>buraya birsey yaz</p>
+</div>
 
-<div class="container">
-  <p data-en="Select a product from the menu to view details." data-tr="Detayları görmek için menüden bir ürün seçin." data-de="Wählen Sie ein Produkt aus dem Menü, um Details zu sehen."></p>
-  <p data-en="Ugur Uyhan GmbH offers Europe's highest quality in all sectors at the lowest European prices. Contact us and gain while purchasing." data-tr="GloBetrieb bütün branşlarda Avrupanın en yüksek kalitesini Avrupanın en düşük fiyatlarıyla hizmetinize sunar. Bizimle iletişime geçin, alırken kazanın." data-de="GloBetrieb bietet in allen Branchen Europas höchste Qualität zu den niedrigsten europäischen Preisen. Kontaktieren Sie uns und profitieren Sie beim Einkauf."></p>
+</div>
+</div>
 
+<div class="section dark">
+<h2>buraya birsey yaz</h2>
+<p style="max-width:700px;margin:auto;">
+buraya birsey yaz
+</p>
+</div>
 
-  <!-- Corporate Trust Section -->
-  <h2 style="text-align:center;margin-top:70px;">Why Companies Choose GloBetrieb</h2>
-  <div style="display:flex;flex-wrap:wrap;gap:30px;justify-content:center;margin-top:30px;">
-    <div style="width:260px;background:white;padding:20px;border-radius:12px;box-shadow:0 3px 12px rgba(0,0,0,.1)">
-      <h3>🇩🇪 European Quality</h3>
-      <p>All products meet European production and quality standards.</p>
-    </div>
-    <div style="width:260px;background:white;padding:20px;border-radius:12px;box-shadow:0 3px 12px rgba(0,0,0,.1)">
-      <h3>🏭 B2B Focus</h3>
-      <p>Designed for distributors, hotels, factories and retailers.</p>
-    </div>
-    <div style="width:260px;background:white;padding:20px;border-radius:12px;box-shadow:0 3px 12px rgba(0,0,0,.1)">
-      <h3>💰 Competitive Pricing</h3>
-      <p>Direct supply with optimized European pricing.</p>
-    </div>
-  </div>
+<div class="section">
+<h2>buraya birsey yaz</h2>
+<p>buraya birsey yaz</p>
+
+<a class="btn" href="#">
+buraya birsey yaz
+</a>
 </div>
 
 <footer>
-  <p>© 2026 Ugur Uyhan GmbH | Mesumerstr. 1 48432 Rheine | +4917681363540 | +905423832215</p>
+<p>buraya birsey yaz</p>
 </footer>
 
-<a href="https://wa.me/4917681363540?text=Hello%20I%20want%20to%20receive%20wholesale%20information."
-style="position:fixed;bottom:25px;right:25px;background:#25D366;color:white;padding:16px 22px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:999;">Request Wholesale Offer</a>
-
-<script>
-  function setLang(lang){
-    document.querySelectorAll('[data-'+lang+']').forEach(el=>{
-      el.innerHTML = el.getAttribute('data-'+lang);
-    });
-  }
-  setLang('en');
-</script>
+<a class="whatsapp"
+href="https://wa.me/4917681363540?text=Hello%20I%20want%20to%20receive%20wholesale%20information.">
+WhatsApp
+</a>
 
 </body>
 </html>
