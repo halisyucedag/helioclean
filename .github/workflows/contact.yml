@@ -1,1 +1,30 @@
+name: Contact Form
 
+on:
+  repository_dispatch:
+    types: [contact_message]
+
+jobs:
+  create-issue:
+    runs-on: ubuntu-latest
+
+    permissions:
+      issues: write
+
+    steps:
+      - name: Create Issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const message = context.payload.client_payload.message;
+
+            if (!message || !message.trim()) {
+              throw new Error("Mesaj boş.");
+            }
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: "Yeni İletişim Mesajı",
+              body: message
+            });
